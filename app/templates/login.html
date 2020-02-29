@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<!-- Formulario de Login -->
+<form method="POST">
+  {{ form.csrf_token }}
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="alert alert-light">
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% endwith %}
+  <!-- Logo -->
+  <div class="text-center">
+    <i class="fas fa-sign-in-alt logo mb-2"></i>
+    <h1 class="titulo">Faça login </h1>
+  </div>
+  <!-- Campo Nome Usuario -->
+  <div class="form-group">
+    {{ form.usuario(class="form-control", placeholder="Usuário",  autofocus="True", autocomplete="off", required="True") }}
+  </div>
+  <!-- Campo Senha -->
+  <div class="form-group">
+    {{ form.senha(class="form-control", placeholder="Senha", required="True") }}
+  </div>
+  <button class="btn btn-block btn-success" type="submit">Entrar  </button>
+  <button class="btn btn-block btn-link text-light" type="button">Ainda não tem uma conta?</button>
+</form>
+{% endblock %}

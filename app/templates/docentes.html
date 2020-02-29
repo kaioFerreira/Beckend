@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<!-- Container Docentes -->
+<div class="accordion" id="accordionExample">
+  {% set i = namespace(val=1) %}
+  {% for docente in docentes %}
+  <div class="card">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card-header" id="heading{{ i.val }}">
+          <button class="btn btn-block btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapse{{ i.val }}">
+            {{ docente }}
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4 text-center pt-3">
+        Nota Geral: 5.0
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <div id="collapse{{ i.val }}" class="collapse">
+      <div class="card-body">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <h4>Avaliação1</h4>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="col-md-3">
+            <h4>Avaliação2</h4>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="col-md-3">
+            <h4>Avaliação3</h4>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="col-md-3">
+            <h4>Avaliação4</h4>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% set i.val = i.val + 1 %}
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #00a8ff, #f600ff);
+}
+
+form {
+  width: 100%;
+  max-width: 275px;
+  margin: auto;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0px;
+  border-radius: 20px;
+  color: grey;
+  padding-left: 30px;
+  transition: .5s;
+}
+
+.form-control:focus {
+  padding-left: 0px;
+  box-shadow: 0 0 0 0;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.logo {
+  color: #FFF;
+  font-size: 10vh;
+  margin: auto;
+}
+
+.titulo {
+  color: #FFF;
+  font-size: 5vh;
+}
+
+::placeholder {
+  color: red;
+}
