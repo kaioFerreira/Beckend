@@ -1,2 +1,2 @@
-# Beckend
+# Frontend
 Beckend Projeto ZG Soluções
