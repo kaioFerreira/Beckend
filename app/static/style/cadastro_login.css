@@ -18,9 +18,9 @@ form {
   background-color: rgba(255, 255, 255, 0.6);
   border: 0px;
   border-radius: 20px;
-  color: grey;
-  padding-left: 30px;
-  transition: .5s;
+  padding-left: 0px;
+  box-shadow: 0 0 0 0;
+  text-align: center;
 }
 
 .form-control:focus {
@@ -39,10 +39,12 @@ form {
   margin: auto;
 }
 
-.titulo {
-  color: #FFF;
-  font-size: 5vh;
+.logo-titulo {
+  width: 90px;
+  margin-bottom: 15px;
 }
+
+
 
 ::placeholder {
   color: red;

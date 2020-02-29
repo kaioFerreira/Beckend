@@ -1,3 +1,4 @@
+from flask_script import Manager
 from flask import Flask
 
 app = Flask(__name__)
