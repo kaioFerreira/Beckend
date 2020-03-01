@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://ocdn.eu/pulscms-transforms/1/34Ek9kpTURBXy8wNzhhNmZjZWVlYjc0YWRiNGIzZDYwYmMzOWZiNjQwZC5qcGeTlQMAbM0V8M0MV5MFzQMUzQG8kwmmOWQ1NGMzBoGhMAU/pierwszy-na-swiecie-zlozony-przeszczep-narzadow-szyi-w-gliwicach.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+* {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.form-control {
+    border-radius: 20px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0;
+}
+
+.table {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.card-header {
+    font-size: 25px;
+}
+
+#inputID {
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 0;
+    padding-left: 20px;
+}

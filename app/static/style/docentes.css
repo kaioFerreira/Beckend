@@ -1,9 +1,0 @@
-html, body {
-  height: 100%;
-}
-
-body {
-  background-image: linear-gradient(to bottom right, #00a8ff, #f600ff);
-  background-attachment: fixed;
-  padding: 50px;
-}
