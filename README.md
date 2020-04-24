@@ -1,2 +1,2 @@
 # Frontend
-Beckend Projeto ZG Soluções
+Frontend Maratona ZG Soluções
